@@ -24,7 +24,7 @@ Let us first filter the data based on gender and race. The relevant code chunk i
 ![Code_Snippet_03](https://github.com/maddies-codespace/R-Project/assets/141537679/b4c30f22-c6d4-40df-a09e-3743fd0391ac)
 
 
-There are several ways to present the same data. Finding the best way to present is always a challenge and more times than not, a matter of personal preference. For example, look at the two plots below. Fig.1 is a scatterplot and Fig.2 is a ggplot. They both present the same information - Average life expectancy (expressed in years) of black males from 1900 - 2018.  If we notice carefully, Fig.2 shows a sharp dip in life expectancy around the year, 1918. This coincides with when the flu pandemic occurred in the US [2]. I believe that Fig.2 was able to emphasize the dip much better than Fig.1 . Other than that, both plots show that the average life expectancy has steadily improved over the years, be it due to advancement in science leading the way for better medicines, dental care, vaccines, etc more available, or technology that can lead to early detection of many diseases, safer cars being available, etc. 
+There are several ways to present the same data. Finding the best way to present is always a challenge and more times than not, a matter of personal preference. For example, look at the two plots below. Fig.1 is a scatterplot and Fig.2 is a ggplot. They both present the same information - Average life expectancy (expressed in years) of black males from 1900 - 2018.  If we notice carefully, Fig.2 shows a sharp dip in life expectancy around the year, 1918. This coincides with when the flu pandemic occurred in the US [2]. I believe that Fig.2 was able to emphasize the dip much better than Fig.1 . Other than that, both plots show that the average life expectancy has steadily improved over the years, be it due to advancements in science leading the way for better medicines, dental care, vaccines, etc becoming readily available, or technology that can lead to early detection of many diseases, safer cars being available, etc. 
 
 ![Figure1](https://github.com/maddies-codespace/R-Project/assets/141537679/b91151c6-3971-4fe6-8276-3b9ea4ae0448)
 
@@ -76,12 +76,12 @@ There are several more angles in which this dataset can be mined and studied. Ha
 
 
 Hyperlinks:
-1.	[one](https://data.cdc.gov/NCHS/NCHS-Death-rates-and-life-expectancy-at-birth/w9j2-ggv5)
-2.	The 1918 Flu Pandemic: Why It Matters 100 Years Later | Blogs | CDC
-3.	Introduction to ggridges (r-project.org)
-4.	Data Visualization in R with ggplot2: A Beginner Tutorial (dataquest.io)
-5.	How to Plot Multiple Boxplots in One Chart in R - Statology
-6.	How to Calculate Conditional Mean in R (With Examples) - Statology
-7.	Box Plot Explained: Interpretation, Examples, & Comparison (simplypsychology.org)
-8.	How to get max of a column based on other columns in R - Stack Overflow
+1.	[NCHS - Death rates and life expectancy at birth | Data | Centers for Disease Control and Prevention](https://data.cdc.gov/NCHS/NCHS-Death-rates-and-life-expectancy-at-birth/w9j2-ggv5)
+2.	[The 1918 Flu Pandemic: Why It Matters 100 Years Later | Blogs | CDC](https://blogs.cdc.gov/publichealthmatters/2018/05/1918-flu/)
+3.	[Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html#:~:text=The%20ggridgespackage%20provides%20two%20main%20geoms%2C%20geom_ridgelineand%20geom_density_ridges.,data%20densities%20and%20then%20draws%20those%20using%20ridgelines.)
+4.	[Data Visualization in R with ggplot2: A Beginner Tutorial](https://www.dataquest.io/blog/data-visualization-in-r-with-ggplot2-a-beginner-tutorial/)
+5.	[How to Plot Multiple Boxplots in One Chart in R - Statology](https://www.statology.org/multiple-boxplots-r/)
+6.	[How to Calculate Conditional Mean in R (With Examples) - Statology](https://www.statology.org/conditional-mean-in-r/)
+7.	[Box Plot Explained: Interpretation, Examples, & Comparison](https://www.simplypsychology.org/boxplots.html)
+8.	[How to get max of a column based on other columns in R - Stack Overflow](https://stackoverflow.com/questions/70994358/how-to-get-max-of-a-column-based-on-other-columns-in-r)
 
