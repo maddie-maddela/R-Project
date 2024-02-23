@@ -1,13 +1,15 @@
-# R-Project: Display demographic data using plot options in R
+# R-Project: Study demographic data using different options in R
 
 As the old adage goes, a picture is worth a thousand words! In our increasingly data-driven world, it has become essential to understand the data being collected on a deeper level. Data visualization is the graphical representation of data. The visualization of data is an important aspect of presenting an analysis done on the data in a way that makes it easy for people from different walks of life to view the data through plots, notice trends, spot differences, etc. R is a programming language that provides several convenient options to plot data like scatterplots, boxplots, ggplots, etc.
 
 The National Center for Health Statistics has been recording mortality rates in the United States with respect to sex, race, and year since 1900. This dataset has been chosen to demonstrate some visualization options available in R. There are 5 columns in this dataset: Year, Race, Sex, Average Life Expectancy (Years), and Age-adjusted Death Rate. The year range is from 1900 – 2018 [1]. 
 
 A snippet of the csv file is shown here:
+
 ![Code_Snippet_01](https://github.com/maddies-codespace/R-Project/assets/141537679/62297163-da0d-4820-8e23-bbacb5923411)
 
 Let us load and prep this data in R Studio.
+
 ![Code_Snippet_02](https://github.com/maddies-codespace/R-Project/assets/141537679/11d5100c-a2a3-4048-a652-6e59d431a03b)
 
 We can look at column information and see
@@ -17,6 +19,7 @@ There are several parameters that can be compared and contrasted in this dataset
 # 1.	Average Life Expectancy over the years
 Let us first filter the data based on gender and race. 
 Relevant code:
+
 ![Code_Snippet_03](https://github.com/maddies-codespace/R-Project/assets/141537679/b4c30f22-c6d4-40df-a09e-3743fd0391ac)
 
 
@@ -27,6 +30,7 @@ There are several ways to present the same data. Finding the best way to present
 Fig.1: Graphing the average life expectancy of black males by year as a scatter plot
 
 Code to generate scatter plot:
+
 ![Code_Snippet_04](https://github.com/maddies-codespace/R-Project/assets/141537679/8fc5263a-0d3a-4449-9336-e9c284816e62)
 
 ![Figure2](https://github.com/maddies-codespace/R-Project/assets/141537679/3d1c52db-b634-4c72-956c-06e851b35529)
@@ -34,6 +38,7 @@ Code to generate scatter plot:
 Fig.2: Graphing average life expectancy of black males by year as a ggplot
 
 Code to generate ggplot:
+
 ![Code_Snippet_05](https://github.com/maddies-codespace/R-Project/assets/141537679/fc959161-c497-4fbf-b404-a00293f135e0)
 
 As a side note, this dip can be observed in data for all males and females irrespective of race. The US lost around 675,000 lives to the flu pandemic [2].
@@ -47,7 +52,7 @@ Fig. 3: Comparison of average life expectancy between males and females
 
 Code to generate box plot:
 
-
+![Code_Snippet_06](https://github.com/maddies-codespace/R-Project/assets/141537679/73825ddd-fa5a-47d3-ad21-bdc9ea6994e4)
 
 # 3.	Average Life Expectancy and Race
 Another aspect that can be studied with this dataset is what effect, if any does race have in the variation of the average life expectancy. I had read about ggridges [3] and wanted to explore a plot using that option. This plot has the capability to show the distribution of data. Let’s look at Fig. 4, where I compared the distributions of the life expectancy of white and black people. I have marked some peaks on the plot as A, B, C, and D. For the black population, there is an increase in mortality rate starting around age 25 and a small peak, A around age 35. The highest peak came around C, 65 years of age. For the white population, the mortality rate only starts increasing visibly after B, 40 years of age. There is a small peak around 50 and the highest peak comes around D, 75 years of age. It can also be noted that in general, black people have a greater chance of dying early and white people have a greater chance of surviving past 80 years of age. Now, there are several factors that can contribute to this phenomenon - socio-economic factors like poverty, neighborhoods, education, health, access to proper healthcare, genetic predisposition to diseases like sickle cell, diabetes, heart disease, lifestyle choices, etc. 
