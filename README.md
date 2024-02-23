@@ -18,7 +18,7 @@ We can look at column information and plot the desired parameters using R Studio
 
 There are several parameters that can be compared and contrasted in this dataset. I have chosen the following:
 
-# 1.	Average Life Expectancy over the years
+## 1.	Average Life Expectancy over the years
 Let us first filter the data based on gender and race. The relevant code chunk is shown below.
 
 ![Code_Snippet_03](https://github.com/maddies-codespace/R-Project/assets/141537679/b4c30f22-c6d4-40df-a09e-3743fd0391ac)
@@ -28,7 +28,7 @@ There are several ways to present the same data. Finding the best way to present
 
 ![Figure1](https://github.com/maddies-codespace/R-Project/assets/141537679/b91151c6-3971-4fe6-8276-3b9ea4ae0448)
 
-Fig.1: Graphing the average life expectancy of black males by year as a scatter plot
+_Fig.1: Graphing the average life expectancy of black males by year as a scatter plot_
 
 Code to generate scatter plot:
 
@@ -36,7 +36,7 @@ Code to generate scatter plot:
 
 ![Figure2](https://github.com/maddies-codespace/R-Project/assets/141537679/3d1c52db-b634-4c72-956c-06e851b35529)
 
-Fig.2: Graphing average life expectancy of black males by year as a ggplot [3]
+_Fig.2: Graphing average life expectancy of black males by year as a ggplot [3]_
 
 Code to generate ggplot:
 
@@ -44,23 +44,23 @@ Code to generate ggplot:
 
 As a side note, this dip can be observed in data for all males and females irrespective of race. The US lost around 675,000 lives to the flu pandemic [2].
 
-# 2.	Average Life expectancy and gender
+## 2.	Average Life expectancy and gender
 Let’s look at how life expectancy varied for men and women over the years. For this analysis, I chose a box plot [4-5]. Fig. 3 shows a box and whisker plot while also highlighting the median of each group of data.  The median life expectancy of the male and female population was calculated to be 64.6 and 71.6 years respectively. Women live longer than men. What causes relatively earlier deaths in men - is it overall health and hygiene, eating habits, stress, smoking, drinking, risky behavior, etc. 
 
 ![Figure3](https://github.com/maddies-codespace/R-Project/assets/141537679/32ff34f8-f8f2-4d10-a812-77a16baec8db)
 
-Fig. 3: Comparison of average life expectancy between males and females
+_Fig. 3: Comparison of average life expectancy between males and females_
 
 Code to generate box plot:
 
 ![Code_Snippet_06](https://github.com/maddies-codespace/R-Project/assets/141537679/73825ddd-fa5a-47d3-ad21-bdc9ea6994e4)
 
-# 3.	Average Life Expectancy and Race
+## 3.	Average Life Expectancy and Race
 Another aspect that can be studied with this dataset is what effect, if any does race have in the variation of the average life expectancy. I had read about ggridges [6] and wanted to explore a plot using that option. This plot has the capability to show the distribution of data. Let’s look at Fig. 4, where I compared the distributions of the life expectancy of white and black people. I have marked some peaks on the plot as A, B, C, and D. For the black population, there is an increase in mortality rate starting around age 25 and a small peak, A around age 35. The highest peak came around C, 65 years of age. For the white population, the mortality rate only starts increasing visibly after B, 40 years of age. There is a small peak around 50 and the highest peak comes around D, 75 years of age. It can also be noted that in general, black people have a greater chance of dying early and white people have a greater chance of surviving past 80 years of age. Now, there are several factors that can contribute to this phenomenon - socio-economic factors like poverty, neighborhoods, education, health, access to proper healthcare, genetic predisposition to diseases like sickle cell, diabetes, heart disease, lifestyle choices, etc. 
 
 ![Figure4](https://github.com/maddies-codespace/R-Project/assets/141537679/119c177b-f04a-4261-9145-bff959bab093)
 
-Fig.4: Comparison of the average life expectancy of the black vs white population
+_Fig.4: Comparison of the average life expectancy of the black vs white population_
 
 Code to generate plot using ggridges [6]:
 
@@ -75,7 +75,7 @@ The mean, median, max of the parameters can also be computed [7-8].
 There are several more angles in which this dataset can be mined and studied. Happy exploring! Here are the links to some references that were very helpful to me.
 
 
-References:
+## References:
 1.	[NCHS - Death rates and life expectancy at birth | Data | Centers for Disease Control and Prevention](https://data.cdc.gov/NCHS/NCHS-Death-rates-and-life-expectancy-at-birth/w9j2-ggv5)
 2.	[The 1918 Flu Pandemic: Why It Matters 100 Years Later | Blogs | CDC](https://blogs.cdc.gov/publichealthmatters/2018/05/1918-flu/)
 3.	[Data Visualization in R with ggplot2: A Beginner Tutorial](https://www.dataquest.io/blog/data-visualization-in-r-with-ggplot2-a-beginner-tutorial/)
