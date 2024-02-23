@@ -68,7 +68,7 @@ Code to generate plot using ggridges [6]:
 
 We have to bear in mind not to draw too many conclusions from a narrow view at the data. We do not know when the deaths around A occurred - if that is well in the past or closer to 2018.
 
-The mean, median, max of the parameters can also be computed [7-8].
+Different statistical measures like mean, median, max of the parameters can be computed in R [7-8]. The code for mean and max is shown below.
 
 ![Code_Snippet_08](https://github.com/maddies-codespace/R-Project/assets/141537679/970f9616-6b88-4302-a68c-42cde61487b8)
 
