@@ -19,8 +19,7 @@ We can look at column information, plot a few parameters using R Studio.
 There are several parameters that can be compared and contrasted in this dataset. I have chosen the following:
 
 # 1.	Average Life Expectancy over the years
-Let us first filter the data based on gender and race. 
-Relevant code:
+Let us first filter the data based on gender and race. The relevant code chunk is shown below.
 
 ![Code_Snippet_03](https://github.com/maddies-codespace/R-Project/assets/141537679/b4c30f22-c6d4-40df-a09e-3743fd0391ac)
 
@@ -65,8 +64,13 @@ Fig.4: Comparison of the average life expectancy of the black vs white populatio
 
 Code to generate plot using ggridges:
 
+![Code_Snippet_07](https://github.com/maddies-codespace/R-Project/assets/141537679/7375d5b3-65f6-4c07-a03b-c53ae83fb764)
 
 We have to bear in mind not to draw too many conclusions from a narrow view at the data. We do not know when the deaths around A occurred - if that is well in the past or closer to 2018.
+
+The mean, median, max of the parameters can also be computed here.
+
+![Code_Snippet_08](https://github.com/maddies-codespace/R-Project/assets/141537679/970f9616-6b88-4302-a68c-42cde61487b8)
 
 There are several more angles in which this dataset can be mined and studied. Happy exploring! Here are some links that were very helpful to me [3-8].
 
