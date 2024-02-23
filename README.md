@@ -12,7 +12,9 @@ Let us load and prep this data in R Studio.
 
 ![Code_Snippet_02](https://github.com/maddies-codespace/R-Project/assets/141537679/11d5100c-a2a3-4048-a652-6e59d431a03b)
 
-We can look at column information and see
+We can look at column information, plot a few parameters using R Studio.
+
+![Code_Snippet_09](https://github.com/maddies-codespace/R-Project/assets/141537679/7b575625-3da1-4248-baf6-c4d6f87ed471)
 
 There are several parameters that can be compared and contrasted in this dataset. I have chosen the following:
 
