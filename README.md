@@ -76,7 +76,7 @@ There are several more angles in which this dataset can be mined and studied. Ha
 
 
 Hyperlinks:
-1.	[a link] https://data.cdc.gov/NCHS/NCHS-Death-rates-and-life-expectancy-at-birth/w9j2-ggv5
+1.	[one](https://data.cdc.gov/NCHS/NCHS-Death-rates-and-life-expectancy-at-birth/w9j2-ggv5)
 2.	The 1918 Flu Pandemic: Why It Matters 100 Years Later | Blogs | CDC
 3.	Introduction to ggridges (r-project.org)
 4.	Data Visualization in R with ggplot2: A Beginner Tutorial (dataquest.io)
