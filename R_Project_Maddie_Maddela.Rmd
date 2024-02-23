@@ -1,0 +1,119 @@
+
+
+```{r}
+#Load the appropriate csv file
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(ggridges)
+life_data <- read.csv("Path/to/NCHS_Data.csv") #Add appropriate path here
+```
+
+
+```{r}
+#checkout all the columns in it
+colnames(life_data)
+
+```
+
+
+```{r}
+#Filter data based on race
+race_data <- life_data %>%
+  filter(Race=="Black")
+```
+
+
+```{r}
+plot(race_data$Year, race_data$Average_Life_Expectancy, pch = 19, col = "green")
+```
+
+
+
+```{r}
+#Using the filter function to peruse desired data
+filtered_data <- life_data %>%
+  filter(Race == "Black", Sex == "Male")
+  #filter(Year==2000,Sex=="Male")
+#view(filtered_data)
+```
+
+```{r}
+ggplot(filtered_data,aes(x = Year, y = Average_Life_Expectancy)) + geom_line()
+```
+
+
+```{r}
+plot(filtered_data$Year, filtered_data$Average_Life_Expectancy, pch = 19, col = "black")
+```
+
+
+
+```{r}
+#Distribution of Average Life Expectancy by Year
+boxplot(Average_Life_Expectancy~Year, data=life_data,
+main="Distribution of Average Life Expectancy by Year",
+ylab="Average Life Expectancy",
+xlab="Year",
+col="steelblue",
+border="black"
+)
+```
+
+
+
+```{r}
+#Distribution of Average Life Expectancy by Sex
+filtered_data1 <- life_data %>%
+  filter(Sex == "Male"| Sex == "Female")
+boxplot(Average_Life_Expectancy~Sex, data=filtered_data1,
+main="Distribution of Average Life Expectancy by Sex",
+ylab="Average Life Expectancy",
+col="steelblue",
+border="black"
+)
+```
+
+
+```{r}
+median(filtered_data1[filtered_data1$Sex == "Male","Average_Life_Expectancy"],na.rm = TRUE)
+
+```
+Median = 64.6
+
+```{r}
+median(filtered_data1[filtered_data1$Sex == "Female","Average_Life_Expectancy"],na.rm = TRUE)
+```
+Median = 71.6
+
+
+```{r}
+#Distribution of Average Life Expectancy by Race
+filtered_data2 <- life_data %>%
+  filter(Race == "White"| Race == "Black")
+ggplot(filtered_data2, aes(x = Average_Life_Expectancy, y = Race)) + geom_density_ridges(scale = 1)
+```
+
+
+```{r}
+#Mean Life Expectancy for Caucasians
+mean(filtered_data2[filtered_data2$Race == "White","Average_Life_Expectancy"],na.rm = TRUE)
+```
+Mean = 67.68757
+
+```{r}
+#Mean Life Expectancy for African Americans
+mean(filtered_data2[filtered_data2$Race == "Black","Average_Life_Expectancy"], na.rm = TRUE)
+```
+Mean = 58.79859
+
+```{r}
+#Max Life Expectancy by race
+library(data.table)
+
+setDT(filtered_data2)[filtered_data2[, .I[which.max(Average_Life_Expectancy)], by=c("Year", "Race")]$V1][, max(Average_Life_Expectancy), by=Race]
+```
+
+   Race  V1
+1: Black 78.5
+2: White 81.4
