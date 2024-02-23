@@ -8,7 +8,7 @@ A snippet of the csv file is shown here:
 
 ![Code_Snippet_01](https://github.com/maddies-codespace/R-Project/assets/141537679/62297163-da0d-4820-8e23-bbacb5923411)
 
-Let us load and prep this data in R Studio.
+Let us load and prep this data in R Studio. The path needs to be changed to the appropriate file location for this code to work. 
 
 ![Code_Snippet_02](https://github.com/maddies-codespace/R-Project/assets/141537679/11d5100c-a2a3-4048-a652-6e59d431a03b)
 
