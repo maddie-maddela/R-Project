@@ -36,7 +36,7 @@ Code to generate scatter plot:
 
 ![Figure2](https://github.com/maddies-codespace/R-Project/assets/141537679/3d1c52db-b634-4c72-956c-06e851b35529)
 
-Fig.2: Graphing average life expectancy of black males by year as a ggplot
+Fig.2: Graphing average life expectancy of black males by year as a ggplot [3]
 
 Code to generate ggplot:
 
@@ -45,7 +45,7 @@ Code to generate ggplot:
 As a side note, this dip can be observed in data for all males and females irrespective of race. The US lost around 675,000 lives to the flu pandemic [2].
 
 # 2.	Average Life expectancy and gender
-Let’s look at how life expectancy varied for men and women over the years. For this analysis, I chose a box plot. Fig. 3 shows a box and whisker plot while also highlighting the median of each group of data.  The median life expectancy of the male and female population was calculated to be 64.6 and 71.6 years respectively. Women live longer than men. What causes relatively earlier deaths in men - is it overall health and hygiene, eating habits, stress, smoking, drinking, risky behavior, etc. 
+Let’s look at how life expectancy varied for men and women over the years. For this analysis, I chose a box plot [4-5]. Fig. 3 shows a box and whisker plot while also highlighting the median of each group of data.  The median life expectancy of the male and female population was calculated to be 64.6 and 71.6 years respectively. Women live longer than men. What causes relatively earlier deaths in men - is it overall health and hygiene, eating habits, stress, smoking, drinking, risky behavior, etc. 
 
 ![Figure3](https://github.com/maddies-codespace/R-Project/assets/141537679/32ff34f8-f8f2-4d10-a812-77a16baec8db)
 
@@ -56,32 +56,32 @@ Code to generate box plot:
 ![Code_Snippet_06](https://github.com/maddies-codespace/R-Project/assets/141537679/73825ddd-fa5a-47d3-ad21-bdc9ea6994e4)
 
 # 3.	Average Life Expectancy and Race
-Another aspect that can be studied with this dataset is what effect, if any does race have in the variation of the average life expectancy. I had read about ggridges [3] and wanted to explore a plot using that option. This plot has the capability to show the distribution of data. Let’s look at Fig. 4, where I compared the distributions of the life expectancy of white and black people. I have marked some peaks on the plot as A, B, C, and D. For the black population, there is an increase in mortality rate starting around age 25 and a small peak, A around age 35. The highest peak came around C, 65 years of age. For the white population, the mortality rate only starts increasing visibly after B, 40 years of age. There is a small peak around 50 and the highest peak comes around D, 75 years of age. It can also be noted that in general, black people have a greater chance of dying early and white people have a greater chance of surviving past 80 years of age. Now, there are several factors that can contribute to this phenomenon - socio-economic factors like poverty, neighborhoods, education, health, access to proper healthcare, genetic predisposition to diseases like sickle cell, diabetes, heart disease, lifestyle choices, etc. 
+Another aspect that can be studied with this dataset is what effect, if any does race have in the variation of the average life expectancy. I had read about ggridges [6] and wanted to explore a plot using that option. This plot has the capability to show the distribution of data. Let’s look at Fig. 4, where I compared the distributions of the life expectancy of white and black people. I have marked some peaks on the plot as A, B, C, and D. For the black population, there is an increase in mortality rate starting around age 25 and a small peak, A around age 35. The highest peak came around C, 65 years of age. For the white population, the mortality rate only starts increasing visibly after B, 40 years of age. There is a small peak around 50 and the highest peak comes around D, 75 years of age. It can also be noted that in general, black people have a greater chance of dying early and white people have a greater chance of surviving past 80 years of age. Now, there are several factors that can contribute to this phenomenon - socio-economic factors like poverty, neighborhoods, education, health, access to proper healthcare, genetic predisposition to diseases like sickle cell, diabetes, heart disease, lifestyle choices, etc. 
 
 ![Figure4](https://github.com/maddies-codespace/R-Project/assets/141537679/119c177b-f04a-4261-9145-bff959bab093)
 
 Fig.4: Comparison of the average life expectancy of the black vs white population
 
-Code to generate plot using ggridges:
+Code to generate plot using ggridges [6]:
 
 ![Code_Snippet_07](https://github.com/maddies-codespace/R-Project/assets/141537679/7375d5b3-65f6-4c07-a03b-c53ae83fb764)
 
 We have to bear in mind not to draw too many conclusions from a narrow view at the data. We do not know when the deaths around A occurred - if that is well in the past or closer to 2018.
 
-The mean, median, max of the parameters can also be computed.
+The mean, median, max of the parameters can also be computed [7-8].
 
 ![Code_Snippet_08](https://github.com/maddies-codespace/R-Project/assets/141537679/970f9616-6b88-4302-a68c-42cde61487b8)
 
-There are several more angles in which this dataset can be mined and studied. Happy exploring! Here are some links that were very helpful to me [3-8].
+There are several more angles in which this dataset can be mined and studied. Happy exploring! Here are the links to some references that were very helpful to me.
 
 
-Hyperlinks:
+References:
 1.	[NCHS - Death rates and life expectancy at birth | Data | Centers for Disease Control and Prevention](https://data.cdc.gov/NCHS/NCHS-Death-rates-and-life-expectancy-at-birth/w9j2-ggv5)
 2.	[The 1918 Flu Pandemic: Why It Matters 100 Years Later | Blogs | CDC](https://blogs.cdc.gov/publichealthmatters/2018/05/1918-flu/)
-3.	[Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html#:~:text=The%20ggridgespackage%20provides%20two%20main%20geoms%2C%20geom_ridgelineand%20geom_density_ridges.,data%20densities%20and%20then%20draws%20those%20using%20ridgelines.)
-4.	[Data Visualization in R with ggplot2: A Beginner Tutorial](https://www.dataquest.io/blog/data-visualization-in-r-with-ggplot2-a-beginner-tutorial/)
-5.	[How to Plot Multiple Boxplots in One Chart in R - Statology](https://www.statology.org/multiple-boxplots-r/)
-6.	[How to Calculate Conditional Mean in R (With Examples) - Statology](https://www.statology.org/conditional-mean-in-r/)
-7.	[Box Plot Explained: Interpretation, Examples, & Comparison](https://www.simplypsychology.org/boxplots.html)
+3.	[Data Visualization in R with ggplot2: A Beginner Tutorial](https://www.dataquest.io/blog/data-visualization-in-r-with-ggplot2-a-beginner-tutorial/)
+4.	[How to Plot Multiple Boxplots in One Chart in R - Statology](https://www.statology.org/multiple-boxplots-r/)
+5.	[Box Plot Explained: Interpretation, Examples, & Comparison](https://www.simplypsychology.org/boxplots.html)
+6.	[Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html#:~:text=The%20ggridgespackage%20provides%20two%20main%20geoms%2C%20geom_ridgelineand%20geom_density_ridges.,data%20densities%20and%20then%20draws%20those%20using%20ridgelines.)
+7.	[How to Calculate Conditional Mean in R (With Examples) - Statology](https://www.statology.org/conditional-mean-in-r/)
 8.	[How to get max of a column based on other columns in R - Stack Overflow](https://stackoverflow.com/questions/70994358/how-to-get-max-of-a-column-based-on-other-columns-in-r)
 
